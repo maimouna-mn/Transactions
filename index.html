@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container dflex jcc aic fdc">
+  <div class="ab"><i class="fa fa-trash b"></i></div>  
+        <div class="open-modal">+</div>
+        <div class="container-recherche">
+            <input type="search" id="inputrecherche" placeholder="Rechercher un client">
+            <ul class="barre-info">
+                <!-- les li -->
+            </ul>
+        </div>
+        <div class="card">
+            <div class="infos dflex">
+                <div class="info flex2 dflex fdc jcsb">
+                    <div class="row dflex jcsb aic">
+                        <span class="label">Nom :</span>
+                        <span class="data" id="lastname">...</span>
+                    </div>
+                    <div class="row dflex jcsb aic">
+                        <span class="label">Prénom :</span>
+                        <span class="data" id="firstname">...</span>
+                    </div>
+                    <div class="row dflex jcsb aic">
+                        <span class="label">Téléphone :</span>
+                        <span class="data" id="phone">...</span>
+                    </div>
+                    <div class="row dflex jcsb aic">
+                        <span class="label">Email :</span>
+                        <span class="data" id="email">...</span>
+                    </div>
+                    <div class="row dflex jcsb aic">
+                        <span class="label">Solde :</span>
+                        <span class="data" id="solde">...</span>
+                    </div>
+                </div>
+                <div class="photo flex1">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="transactions fdc">
+                <div class="title" style="flex: 3;">
+                    <span>Transactions (<code></code>)</span>
+                    <span id="btnDetail" class="btn-detail">+</span>
+                </div>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numero</th>
+                                <th>Date</th>
+                                <th>Sens</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form-group">
+                    <label for="mnt">Montant</label>
+                    <input type="number" id="mnt" placeholder="Montant..." class="from-control">
+                </div>
+                <div class="form-group">
+                    <label for="trans">Transaction</label>
+                    <select id="trans" class="from-control">
+                        <option value="d">Depot</option>
+                        <option value="r">Retrait</option>
+                        <!-- <input type="number" id="telephone" placeholder="Numero..."> -->
+                    </select>
+                    <div class="form-group">
+                        <label for="tel" class="texttl">Telephone</label>
+                        <input type="text" id="tel" placeholder="Telephone" class="from-control"><i class="fa-solid fa-eye a"></i>
+                    </div>
+                </div>
+                <ul class="search-results"></ul>
+                <button type="button" class="enregistrer">Enregistrer</button>
+            </div>
+        </div>
+        <div class="navigation">
+            <button type="button" class="next"> suivant </button>
+        </div>
+    </div>
+    <div class="modal-add-client">
+        <div class="modal-header">Formulaire d'ajout de client</div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="tel">Nom</label>
+                <input type="text" id="nom" placeholder="Nom" class="from-control" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Prénom</label>
+                <input type="text" id="prenom" placeholder="Prénom" class="from-control" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Email</label>
+                <input type="text" id="mail" placeholder="email" class="from-control" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="text" id="new-tel" placeholder="Telephone" class="from-control" required>
+            </div>
+            <div class="form-group">
+                <label for="ph">Photo</label>
+                <input type="text" id="photom" placeholder="photo" class="from-control" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="save">Enregistrer</button>
+            <button class="cancel">Annuler</button>
+        </div>
+    </div>
+    <div class="mod">
+      <h2>Voulez vous vraiment supprimer: <div class="sp"><span class="textsup">hjklk,jhbvghb</span></div> </h2> 
+        <div>
+        <button class="ba">Confirmer</button>
+        <button class="bb">Annuler</button>
+    </div>
+    </div>
+    <!-- <div id="suggestionList"></div> -->
+    <script src="fic.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <li class="search-client-item">
+                    <span class="nom">Mame Boye</span>
+                    <span class="img"></span>
+                </li>  -->
+<!-- <li class="search-client-item">
+                    <span class="nom">Mame Boye</span>
+                    <span class="img"></span>
+                </li>
+                <li class="search-client-item">
+                    <span class="nom">Mame Boye</span>
+                    <span class="img"></span>
+                </li> - -->

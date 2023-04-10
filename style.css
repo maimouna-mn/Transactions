@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #799eb0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.dflex {
+    display: flex;
+}
+
+.dflex.jcc {
+    justify-content: center;
+}
+
+.dflex.jcsb {
+    justify-content: space-between;
+}
+
+.dflex.aic {
+    align-items: center;
+}
+
+.dflex.fdc {
+    flex-direction: column;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+
+/* ------------------------ */
+.card {
+    height: 50vh;
+    width: 40%;
+    background-color: #27566B;
+    padding: 10px;
+    color: #E5E8E9;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    border-left: 2px solid #E5E8E9;
+    padding-left: 10px;
+}
+
+.infos {
+    height: 40%;
+}
+
+.info {
+    padding-right: 10px;
+}
+
+.row .label {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.row .data {
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.btn-detail {
+    font-weight: 900;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.form {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    background-color: #27566B;
+    /* background-color: #06293D;27566B */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.from-control {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 1.20rem;
+}
+
+input.from-control {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: #799eb0;
+    outline: none;
+}
+
+select {
+    outline: none;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    background-color: #06293D;
+    color: #E5E8E9;
+    outline: none;
+    border: 1px solid #799eb0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.next {
+    padding: 5px 20px;
+    font-size: 1.09rem;
+    margin-top: 10px;
+    background-color: #27566B;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #E5E8E9;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    background-color: #799eb0;
+}
+
+tr,
+td {
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid  #06293D;
+}
+
+.form.hide {
+    display: none;
+}
+
+.transactions {
+    height: 50%;
+    overflow-y: scroll;
+}
+
+#telephone {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+.modal-add-client {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50vh;
+    display: none;
+}
+
+.modal-add-client .modal-header,
+.modal-add-client .modal-footer {
+    padding: 1rem 0;
+    background-color: #27566B;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.modal-add-client .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background-color: rgba(121, 158, 176, 0.851);
+}
+
+.modal-add-client .modal-body .form-group {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-add-client .modal-body .form-group input {
+    width: 60%;
+}
+
+.modal-add-client .modal-footer button {
+    padding: .5rem 2rem;
+    background-color: #799eb0;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.ab {
+    height: 60px;
+    width: 60px;
+    background-color: #27566B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    right: 40%;
+}
+
+.b {
+    font-size: 1.5rem;
+}
+
+.a {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0;
+}
+
+.a:hover {
+    opacity: 1;
+}
+
+.mod {
+    width: 15rem;
+    height: 15rem;
+    background-color: #27566B  ;
+    position: absolute;
+    top: 20%;
+    transform: translate(40%, -50%);
+    display: none;
+}
+
+.mod button {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    border: none;
+}
+
+h2 {
+    width: 100%;
+    height: 60%;
+    background-color: #0b374b;
+    color: #E5E8E9;
+    font-size: 1.6rem;
+
+}
+.sp{
+    height: 55%;
+    display: flex;
+    align-items: center;
+}
+h2 span{
+    font-size: 1.8rem
+    
+}
+.open-modal {
+    padding: .5rem 1rem;
+    background-color: #27566B;
+    color: #f1f1f1;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #f1f1f1;
+}
+
+.container-recherche {
+    position: absolute;
+    width: 280px;
+    top: 10%;
+    z-index: 2;
+}
+
+.container-recherche #inputrecherche {
+    padding: .6rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.barre-info {
+    list-style-type: none;
+    background-color: #f1f1f1;
+    color: #06293D;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.infoClientRec {
+    padding: .6rem 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infoClientRec:hover {
+    background-color: #27566B;
+    color: #f1f1f1;
+}
+
+.infoClientRec .img {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.search-results {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    list-style-type: none;
+    color: #06293D;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.search-results .result-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+.trans.active{
+text-decoration: line-through;
+}
+.search-results .result-item:hover {
+    background-color: #06293D;
+    color: #f1f1f1;
+}
+
+.texttel {
+    display: block;
+}
+.io{
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    left: 1rem;
+}
+.notification {
+    position: absolute;
+    background-color: red;
+    width: 25rem;
+    padding: 2rem;
+    z-index: 1;
+    text-align: center;
+    animation: notific 2s;
+    font-size: 1.8rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+@keyframes notific {
+    0% {
+        translate: 0%;
+
+    }
+
+    50% {
+        translate: 10%;
+    }
+
+    100% {
+        translate: 0%;
+    }
+}
